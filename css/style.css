@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-----------------------------------------------------START--------------------------------------------------*/
+
+.div_grid{
+  display: grid;
+justify-content: center;
+  grid-template-columns: 1070px 700px; /* определяем количество и ширину столбцов в макете сетки */
+}
+
+
+.body_font_style{
+  background: #5f9ea0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.news{
+  margin-top: 33px;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  margin-bottom: 47px;
+}
+
+
+.grid-container {
+  display: grid; /* элемент отображается как блочный   grid-контейнер */
+  margin-top: 5px; /* внешний отступ сверху */
+  margin-left: 35%;
+    grid-gap: 20px;
+  /* padding: 10px; /* внешний отступ элемента со всех сторон */
+  /* grid-template-columns:  0px; /* определяем количество и ширину столбцов в макете сетки */
+  grid-template-areas:
+    'phone phone' /* определяем шаблон макета сетки, ссылаясь при этом на имена областей элементов */
+    'game amd' /* точка обозначает элемент без имени */
+    'game asus' /* точка обозначает элемент без имени */
+    'game ear';
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-container{
+    margin: 0;
+    grid-gap: 10px;
+    grid-template-areas:
+    'phone'
+    'game'
+    'amd'
+    'asus'
+    'ear'
+  }
+}
+
+.grid-container > div {
+
+/* сплошная граница размером 1 пиксель черного цвета */
+  text-align: left;; /* горизонтальное выравнивание текста */
+}
+
+.grid-container2 {
+  display: grid; /* элемент отображается как блочный   grid-контейнер */
+  margin-top: 5px; /* внешний отступ сверху */
+  margin-left: 12%;
+    grid-gap: 20px;
+  /* margin-left: 80%; */
+  /* padding: 10px; /* внешний отступ элемента со всех сторон */
+  /* grid-template-rows: 100px; /* определяем количество и ширину строк в макете сетки */
+  grid-template-columns: 39%; /* определяем количество и ширину столбцов в макете сетки */
+  grid-template-areas:
+    'stadium' /* определяем шаблон макета сетки, ссылаясь при этом на имена областей элементов */
+    'nvidia' /* точка обозначает элемент без имени */
+    'huavei' /* точка обозначает элемент без имени */
+    'lenovo';
+}
+
+
+
+.grid-container2 > div {
+  /* цвет заднего фона */
+  border: 1px solid transparent; /* сплошная граница размером 1 пиксель черного цвета */
+  text-align: left;; /* горизонтальное выравнивание текста */
+}
+.item-a {
+  grid-area: phone; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+.hover:hover{
+  -webkit-box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.75);
+}
+
+
+.item-b {
+  grid-area: game; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-c {
+  grid-area: stadium; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-d {
+  grid-area: amd; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-e {
+  grid-area: asus; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-r {
+  grid-area: ear; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-t {
+  grid-area: nvidia; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-y {
+  grid-area: huavei; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.item-u {
+  grid-area: lenovo; /* задаем имя элемента */
+  background: white ; /* цвет заднего фона */
+}
+
+
+
+.phone_photo_kost{
+  float: right;
+}
+
+.text_kostil{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-left: 20px;
+  font-size: 19px;
+  line-height: 1.3em;
+  font-weight: 600;
+}
+
+.text_kostil2{
+  margin-top: 6px;
+  margin-left: 20px;
+  font-size: 13px;
+  line-height: 1.5em;
+  color: #858585;
+}
+
+.text_kostil_foot{
+  color: #858585;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+.text_kostil_foot2{
+  color: #858585;
+  margin-top: -10px;
+  margin-left: 130px;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .grid-container{
+    margin: 0;
+    grid-gap: 10px;
+    grid-template-areas:
+    'phone'
+    'game'
+    'amd'
+    'asus'
+    'ear'
+  }
+}
+@media screen and (max-width: 768px){
+  .news{
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .grid-container2 {
+    margin: 10px 0 0;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    grid-template-areas:
+    'stadium' /* определяем шаблон макета сетки, ссылаясь при этом на имена областей элементов */
+    'nvidia' /* точка обозначает элемент без имени */
+    'huavei' /* точка обозначает элемент без имени */
+    'lenovo';
+  }
+  .mobv{
+    float: right;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .div_grid{
+    grid-template-columns: 100%;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .div_grid{
+    grid-template-columns: 100%; /* определяем количество и ширину столбцов в макете сетки */
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .grid-container2 {
+    margin: 10px 0 0;
+    grid-template-columns:100%;
+    grid-gap: 10px;
+    grid-template-areas:
+    'stadium' /* определяем шаблон макета сетки, ссылаясь при этом на имена областей элементов */
+    'nvidia' /* точка обозначает элемент без имени */
+    'huavei' /* точка обозначает элемент без имени */
+    'lenovo';
+  }
+  .mobv{
+    float: none;
+
+  }
+  .phone_photo_kost{
+    float: none;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .div_grid{
+    grid-template-columns: 100%; /* определяем количество и ширину столбцов в макете сетки */
+    margin: 10px;
+  }
+
+
+}
